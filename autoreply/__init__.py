@@ -136,10 +136,10 @@ class AutoReplyBot(Plugin):
             evt.sender != self.client.mxid
             # We only want to auto-reply if the user is away.
             and await self.store.is_away()
-            # We only want to auto-reply in DMs.
-            and await self._is_direct(evt.room_id)
             # We only want to auto-reply once per room.
             and await self.store.get_message_id_in_room(evt.room_id) is None
+            # We only want to auto-reply in DMs.
+            and await self._is_direct(evt.room_id)
         ):
             # Send the reply.
             await self.client.send_text(
