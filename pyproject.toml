@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "matrix-autoreply"
-version = "0.0.0.dev0"
+version = "1.0.0"
 description = "Maubot plugin for an auto-reply bot"
 authors = ["Brendan Abolivier <git@brendanabolivier.com>"]
 
