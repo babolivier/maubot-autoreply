@@ -142,9 +142,8 @@ class AutoReplyBot(Plugin):
             and await self._is_direct(evt.room_id)
         ):
             # Send the reply.
-            await self.client.send_text(
-                room_id=evt.room_id,
-                text=self.config["message"],
+            await evt.reply(
+                content=self.config["message"],
             )
 
             # Store that we've replied to a message in this room, so we don't do it again
