@@ -1,0 +1,12 @@
+maubot: v0.1.0
+id: bzh.abolivier.autoreply
+version: 0.0.0.dev0
+license: Apache-2.0
+modules:
+  - autoreply
+main_class: AutoReplyBot
+config: true
+extra_files:
+  - base-config.yaml
+database: true
+database_type: asyncpg

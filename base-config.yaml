@@ -1,0 +1,5 @@
+message: "Hi, I'm currently out of office until next week. I will read your message once I come back. This is an automated message."
+
+room:
+  icon: mxc://abolivier.bzh/wLopWZrvLtIoDFjdwMbDZMtR
+  name: Auto-reply management room

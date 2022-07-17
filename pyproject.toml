@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "matrix-autoreply"
+version = "0.0.0.dev0"
+description = "Maubot plugin for an auto-reply bot"
+authors = ["Brendan Abolivier <git@brendanabolivier.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+maubot = "^0.3.1"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^22.6.0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
