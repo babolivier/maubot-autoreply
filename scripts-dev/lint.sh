@@ -14,6 +14,6 @@ files=(
 # Print out the commands being run
 set -x
 
-isort "${files[@]}"
+isort --profile=black "${files[@]}"
 python3 -m black "${files[@]}"
 flake8 "${files[@]}"

@@ -22,7 +22,7 @@ jobs:
         uses: matrix-org/setup-python-poetry@v1
 
       - name: Import order (isort)
-        run: poetry run isort --check --diff .
+        run: poetry run isort --profile=black --check --diff .
 
       - name: Code style (black)
         run: poetry run black --check --diff .
