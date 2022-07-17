@@ -61,3 +61,24 @@ make maubot recreate the room for you:
 The first method is much simpler and less convoluted than the second one, but also means
 you will have to manually restore your configuration. So chose whichever works best for
 you.
+
+## Develop
+
+This project uses [poetry](https://python-poetry.org/) for its dependency management, so
+the first step is installing it (preferably via `pipx`):
+
+```commandline
+pip install --user pipx
+pipx install poetry
+```
+
+Then clone this project and install its dependencies:
+
+```commandline
+git clone https://github.com/babolivier/maubot-autoreply.git
+cd maubot-autoreply
+poetry install
+```
+
+See the [maubot documentation](https://docs.mau.fi/maubot/dev/getting-started.html) for
+plugin development.
