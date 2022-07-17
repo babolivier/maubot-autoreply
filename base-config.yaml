@@ -1,5 +1,7 @@
+# The message to send when away.
 message: "Hi, I'm currently out of office until next week. I will read your message once I come back. This is an automated message."
 
+# Settings for creating the management room (in which the user can set their status and see the summary of missed messages).
 room:
-  icon: mxc://abolivier.bzh/wLopWZrvLtIoDFjdwMbDZMtR
+  avatar: mxc://abolivier.bzh/wLopWZrvLtIoDFjdwMbDZMtR
   name: Auto-reply management room

@@ -73,7 +73,7 @@ class AutoReplyBot(Plugin):
                 {
                     "type": "m.room.avatar",
                     "content": {
-                        "url": self.config["room"]["icon"],
+                        "url": self.config["room"]["avatar"],
                     },
                 },
                 {
