@@ -126,7 +126,7 @@ class AutoReplyBot(Plugin):
             # We only want to auto-reply in DMs.
             and await self._is_direct(evt.room_id)
             # We only want to auto-reply once per room.
-            and await self.store.get_message_id_in_room(evt.room_id) is not None
+            and await self.store.get_message_id_in_room(evt.room_id) is None
         ):
             # Send the reply.
             await self.client.send_text(
