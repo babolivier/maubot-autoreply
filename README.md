@@ -16,6 +16,10 @@ In summary, a bot running this plugin allows you to:
 * have a reply automatically sent to active DMs while away (once per DM)
 * have a summary of the DMs that have been active while away when coming back
 
+See the demo below for a better perspective on how it works:
+
+https://user-images.githubusercontent.com/5547783/179406187-8a11c628-c665-4d1a-b4eb-af59d942dee5.mp4
+
 ## Installation and configuration
 
 You can install this plugin in your maubot instance using the `.mbp` file from the latest
