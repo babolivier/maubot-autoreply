@@ -15,7 +15,7 @@ from typing import Dict, List, Type
 
 from maubot import MessageEvent, Plugin
 from maubot.handlers import event
-from mautrix.types import EventType, RoomID
+from mautrix.types import EventType, MessageType, RoomID, TextMessageEventContent
 from mautrix.util.async_db import UpgradeTable
 from mautrix.util.config import BaseProxyConfig
 
@@ -143,7 +143,10 @@ class AutoReplyBot(Plugin):
         ):
             # Send the reply.
             await evt.reply(
-                content=self.config["message"],
+                content=TextMessageEventContent(
+                    msgtype=MessageType.TEXT,
+                    body=self.config["message"],
+                ),
             )
 
             # Store that we've replied to a message in this room, so we don't do it again
