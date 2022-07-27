@@ -27,7 +27,9 @@ You can install this plugin in your maubot instance using the `.mbp` file from t
 
 Then create a new client in maubot, connected to your own account (so it can send replies
 from it). Make sure to turn "Autojoin" __off__ otherwise the bot might join new rooms and
-DMs on your behalf while you're away.
+DMs on your behalf while you're away. Also make sure to set the display name and avatar
+URL for the instance to `disable`, otherwise maubot will change or remove the profile for
+your account.
 
 You can then proceed to create a new instance with the client you have just created, and
 the plugin `bzh.abolivier.autoreply`. Feel free to edit the configuration as you like. All
